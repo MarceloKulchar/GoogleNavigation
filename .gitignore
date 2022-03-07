@@ -1,0 +1,7 @@
+.vscode
+bin
+bin/test
+build
+.gradle/buildOutputCleanup
+.gradle/checksums
+.gradle/vsc-1

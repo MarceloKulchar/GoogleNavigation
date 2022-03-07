@@ -1,96 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.run" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-04T17:43:11" hostname="LAPTOP-2DTN28Q0" time="0.0">
+<testsuite name="runner.run" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-2DTN28Q0" time="0.0">
   <properties/>
-  <testcase name="classMethod" classname="runner.run" time="0.0">
-    <failure message="java.lang.RuntimeException: java.io.IOException: HTTP request failed:&#10;&gt; GET https://messages.cucumber.io/api/reports&#10;&lt; HTTP/1.1 401 Unauthorized&#10;&lt; X-Cache: Error from cloudfront&#10;&lt; x-amz-apigw-id: OeFjSELIiGYF3lg=&#10;&lt; Access-Control-Allow-Origin: https://reports.cucumber.io&#10;&lt; Access-Control-Allow-Methods: GET&#10;&lt; X-Amz-Cf-Pop: SCL50-C1&#10;&lt; Connection: keep-alive&#10;&lt; X-Amzn-Trace-Id: Root=1-62224fae-273d9ed715e2587111f98cac;Sampled=0&#10;&lt; Access-Control-Allow-Headers: Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token&#10;&lt; Date: Fri, 04 Mar 2022 17:43:10 GMT&#10;&lt; Via: 1.1 251d722e3d568afacb1911e219d34f4c.cloudfront.net (CloudFront)&#10;&lt; Cache-Control: private, no-cache, no-store, must-revalidate&#10;&lt; Access-Control-Allow-Credentials: true&#10;&lt; x-amzn-RequestId: 837946aa-1893-413b-8773-fd75974a8939&#10;&lt; X-Amz-Cf-Id: ztt48I4oP5Ax_aa7YTChwyKH7cGYC0IdrbqkVqdEWWlKhnG6b0CCyg==&#10;&lt; Content-Length: 627&#10;&lt; Content-Type: text/plain; charset=UTF-8&#10;?[31m?[1m┌──────────────────────────────────────────────────────────────┐?[0m&#13;&#10;?[31m?[1m│?[0m Invalid CUCUMBER_PUBLISH_TOKEN: ?[1msome-secret-token?[0m            ?[31m?[1m│?[0m&#13;&#10;?[31m?[1m│?[0m Go to ?[1m?[36m?[4mhttps://reports.cucumber.io/profile?[0m to get your token. ?[31m?[1m│?[0m&#13;&#10;?[31m?[1m└──────────────────────────────────────────────────────────────┘?[0m" type="java.lang.RuntimeException">java.lang.RuntimeException: java.io.IOException: HTTP request failed:
-&gt; GET https://messages.cucumber.io/api/reports
-&lt; HTTP/1.1 401 Unauthorized
-&lt; X-Cache: Error from cloudfront
-&lt; x-amz-apigw-id: OeFjSELIiGYF3lg=
-&lt; Access-Control-Allow-Origin: https://reports.cucumber.io
-&lt; Access-Control-Allow-Methods: GET
-&lt; X-Amz-Cf-Pop: SCL50-C1
-&lt; Connection: keep-alive
-&lt; X-Amzn-Trace-Id: Root=1-62224fae-273d9ed715e2587111f98cac;Sampled=0
-&lt; Access-Control-Allow-Headers: Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token
-&lt; Date: Fri, 04 Mar 2022 17:43:10 GMT
-&lt; Via: 1.1 251d722e3d568afacb1911e219d34f4c.cloudfront.net (CloudFront)
-&lt; Cache-Control: private, no-cache, no-store, must-revalidate
-&lt; Access-Control-Allow-Credentials: true
-&lt; x-amzn-RequestId: 837946aa-1893-413b-8773-fd75974a8939
-&lt; X-Amz-Cf-Id: ztt48I4oP5Ax_aa7YTChwyKH7cGYC0IdrbqkVqdEWWlKhnG6b0CCyg==
-&lt; Content-Length: 627
-&lt; Content-Type: text/plain; charset=UTF-8
-?[31m?[1m┌──────────────────────────────────────────────────────────────┐?[0m
-?[31m?[1m│?[0m Invalid CUCUMBER_PUBLISH_TOKEN: ?[1msome-secret-token?[0m            ?[31m?[1m│?[0m
-?[31m?[1m│?[0m Go to ?[1m?[36m?[4mhttps://reports.cucumber.io/profile?[0m to get your token. ?[31m?[1m│?[0m
-?[31m?[1m└──────────────────────────────────────────────────────────────┘?[0m
-	at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:34)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:139)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:118)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:250)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: java.io.IOException: HTTP request failed:
-&gt; GET https://messages.cucumber.io/api/reports
-&lt; HTTP/1.1 401 Unauthorized
-&lt; X-Cache: Error from cloudfront
-&lt; x-amz-apigw-id: OeFjSELIiGYF3lg=
-&lt; Access-Control-Allow-Origin: https://reports.cucumber.io
-&lt; Access-Control-Allow-Methods: GET
-&lt; X-Amz-Cf-Pop: SCL50-C1
-&lt; Connection: keep-alive
-&lt; X-Amzn-Trace-Id: Root=1-62224fae-273d9ed715e2587111f98cac;Sampled=0
-&lt; Access-Control-Allow-Headers: Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token
-&lt; Date: Fri, 04 Mar 2022 17:43:10 GMT
-&lt; Via: 1.1 251d722e3d568afacb1911e219d34f4c.cloudfront.net (CloudFront)
-&lt; Cache-Control: private, no-cache, no-store, must-revalidate
-&lt; Access-Control-Allow-Credentials: true
-&lt; x-amzn-RequestId: 837946aa-1893-413b-8773-fd75974a8939
-&lt; X-Amz-Cf-Id: ztt48I4oP5Ax_aa7YTChwyKH7cGYC0IdrbqkVqdEWWlKhnG6b0CCyg==
-&lt; Content-Length: 627
-&lt; Content-Type: text/plain; charset=UTF-8
-?[31m?[1m┌──────────────────────────────────────────────────────────────┐?[0m
-?[31m?[1m│?[0m Invalid CUCUMBER_PUBLISH_TOKEN: ?[1msome-secret-token?[0m            ?[31m?[1m│?[0m
-?[31m?[1m│?[0m Go to ?[1m?[36m?[4mhttps://reports.cucumber.io/profile?[0m to get your token. ?[31m?[1m│?[0m
-?[31m?[1m└──────────────────────────────────────────────────────────────┘?[0m
-	at io.cucumber.core.plugin.UrlOutputStream.createCurlLikeException(UrlOutputStream.java:150)
-	at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:135)
-	at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:87)
-	at io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:65)
-	at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:353)
-	at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:168)
-	at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:255)
-	at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:31)
-	... 31 more
-</failure>
-  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m View your Cucumber Report at:                                            ?[32m?[1m??[0m
+?[32m?[1m??[0m ?[1m?[36m?[4mhttps://reports.cucumber.io/reports/1614c390-d307-4349-af75-16e832e361c3?[0m ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                          ?[32m?[1m??[0m
+?[32m?[1m??[0m This report was published in collection "Google Navigation"              ?[32m?[1m??[0m
+?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m]]></system-err>
 </testsuite>
